@@ -37,7 +37,7 @@ public class ClasesPredefinidas {
 		
 		/* Cuando el resultaro del método es de un tipo diferente al que 
 		 * tenemos declarado en la variable, Cuidado con la refundición de un
-		 * dato grande a un tipo de dato pequeño porque puede haber perdida de 
+		 * dato grande a un tipo de dato pequeño porque puede haber pérdida de 
 		 * información. En este caso, */
 		
 		double num2 = 5.85;

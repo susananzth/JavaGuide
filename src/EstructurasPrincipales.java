@@ -53,6 +53,9 @@ public class EstructurasPrincipales {
 			double cm = 6;
 			double resultado = cm / a_pulgada;
 			System.out.println("En " + cm + " cm hay " + resultado + " pulgadas.");
+			
+		// Podemos dar formato al resultado con printf():
+			System.out.printf("%1.2f", cm / a_pulgada);
 		
 		/*===========================*/
 		/*==== USO DE OPERADORES ====*/
@@ -90,7 +93,8 @@ public class EstructurasPrincipales {
 			int c = b + a;
 			
 			System.out.println(c);
-			
+			System.out.println(b +" más " + a + " es igual a: " + (b+a));
+			System.out.println("El conjunto de " + b +" y " + a + " es: " + b+a);
 			c++;
 			System.out.println(c);
 			c-=c;
