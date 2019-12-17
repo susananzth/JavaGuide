@@ -34,6 +34,7 @@ public class EstructurasPrincipales {
 		 * en la memoria RAM. Declaramos una variable de la siguiente forma: */
 			int salario;
 			byte edad;
+			int uno, dos, tres;
 			
 		/* Al inicializar la variable, estamos indicando que en el espacio almacenado 
 		 * en la RAM, irá el valor indicado. Inicializamos una variable de la siguiente forma: */
@@ -49,7 +50,9 @@ public class EstructurasPrincipales {
 		
 		/* Se declara utilizando la palabra final: */
 			final double a_pulgada = 2.54;
-			System.out.println(a_pulgada);
+			double cm = 6;
+			double resultado = cm / a_pulgada;
+			System.out.println("En " + cm + " cm hay " + resultado + " pulgadas.");
 		
 		/*===========================*/
 		/*==== USO DE OPERADORES ====*/
