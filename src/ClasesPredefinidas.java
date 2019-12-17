@@ -1,5 +1,7 @@
 
 public class ClasesPredefinidas {
+	//Curso de pildorasinformáticas
+	
 	//Ejemplo de clases predefinidas: String, Math, Array, Thread.
 	
 	//Cada clase predefinida trae sus métodos.
@@ -60,13 +62,30 @@ public class ClasesPredefinidas {
 		System.out.println("Tu nombre '"+ tu_nombre +"', tiene " + contarNombre + " caracteres.");
 		
 		/*------- Método charAt() -------*/
-		// Contar caracteres.
+		// Extraer caracteres.
 		String ciudad = "Barquisimeto";
 		System.out.println("La ciudad de '"+ ciudad +"' tiene como primera letra '" + ciudad.charAt(0) + "'.");
 		int contarCiudad = ciudad.length();
 		System.out.println("La ciudad de '"+ ciudad +"' tiene como primera letra '" + ciudad.charAt(contarCiudad-1) + "'.");
 		
+		/*------- Método charAt() -------*/
+		// Sustraer caracteres.
+		String frase = "Hoy es un estupendo día para aprender a programar";
+		String fraseResumen = frase.substring(1, 3);
+		System.out.println(fraseResumen);
 		
+		String fraseResumen2 = frase.substring(0, 28) + " irnos a la playa.";
+		System.out.println(fraseResumen2);
+		
+		/*------- Método equals() -------*/
+		// Compara caracteres.
+		String alumno1, alumno2, alumno3;
+		alumno1 = "David";
+		alumno2 = "David";
+		alumno3 = "david";
+		System.out.println(alumno1.equals(alumno2));
+		System.out.println(alumno1.equals(alumno3)); //Distingue entre mayúscula
+		System.out.println(alumno1.equalsIgnoreCase(alumno3)); //No distingue entre mayúscula
 	}
 	
 }

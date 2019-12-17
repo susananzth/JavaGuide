@@ -1,6 +1,6 @@
 
 public class EstructurasPrincipales {
-
+	//Curso de pildorasinformáticas
 	public static void main(String args[]) {
 		System.out.println("Hola Mundo");
 		/* Una impresión en consola de la oración "Hola mundo" */
