@@ -5,7 +5,9 @@ public class EstructurasPrincipales {
 		System.out.println("Hola Mundo");
 		/* Una impresión en consola de la oración "Hola mundo" */
 		
+		/*===========================*/
 		/*===== TIPOS DE DATOS =====*/
+		/*===========================*/
 		
 		/* Números enteros:
 		 *    Int: 4 bytes de almacenamiento. Desde -2.147.483.648 hasta 2.147.483.647
@@ -24,17 +26,78 @@ public class EstructurasPrincipales {
 		 *    Boolean: puede ser true o false.
 		 * */
 		
+		/*===========================*/
 		/*===== USO DE VARIABLE =====*/
+		/*===========================*/
 		
 		/* Se declara la variables para indicar al ordenador que guarde un espacio 
 		 * en la memoria RAM. Declaramos una variable de la siguiente forma: */
 			int salario;
+			byte edad;
 			
 		/* Al inicializar la variable, estamos indicando que en el espacio almacenado 
 		 * en la RAM, irá el valor indicado. Inicializamos una variable de la siguiente forma: */
 			salario = 5000;
-		/* 
+			edad = 35;
+			
+			System.out.println(salario);
+			System.out.println(edad);
+		
+		/*===========================*/
+		/*===== USO DE CONSTANTE =====*/
+		/*===========================*/
+		
+		/* Se declara utilizando la palabra final: */
+			final double a_pulgada = 2.54;
+			System.out.println(a_pulgada);
+		
+		/*===========================*/
+		/*==== USO DE OPERADORES ====*/
+		/*===========================*/
+			
+		/* Aritméticos:
+		 * 	 + Suma.
+		 *   - Resta.
+		 *   * Multiplicación.
+		 *   / División.
+		 *   
+		 * Lógicos, relacionales, booleanos:
+		 *   > Mayor que.
+		 *   < Menor que.
+		 *   <> Mayor o menos que.
+		 *   != Distinto que.
+		 *   == Igual que.
+		 *   && Y lógico
+		 *   || O lógico
+		 * 
+		 * Incremento y decremento:
+		 *   ++ Incremento.
+		 *   -- Decremento.
+		 *   +=n Incremento de n
+		 *   -=n Decremento de n
+		 * 
+		 * Concatenación
+		 *   + Une o concatena.
+		 *   
 		 * */
+			
+			int a = 5;
+			int b;
+			b = 7;
+			int c = b + a;
+			
+			System.out.println(c);
+			
+			c++;
+			System.out.println(c);
+			c-=c;
+			System.out.println(c);
+			
+			// Para divisiones, todos los valores implicados deben estar como double
+			double d = 5;
+			double e = 7;
+			double f = e / d;
+			System.out.println(f);
 	}
 	
 }
