@@ -15,10 +15,10 @@ public class Bucles {
 		String clave = "Susana";
 		
 		String pass = "";
-		/*
+		
 		while (clave.equals(pass) == false) { //Comparamos clave con pass utilizando 'equals'
 			/* Si la consición es cierta, ejecutará el código dentro de estas llaves
-			  hasta que se deje de cumplir la condición 
+			  hasta que se deje de cumplir la condición */
 			
 			
 			//El while se repetira mientras la contraseña sea incorrecta.
@@ -27,14 +27,36 @@ public class Bucles {
 				System.out.println("Contraseña incorrecta!");
 			}
 		}
-		System.out.println("Contraseña correcta! acceso permitido.");
-		*/
+		System.out.println("Contraseña correcta! acceso permitido.");  
 		
-		/*------- Método random() -------*/
+		/*------- Bucle do while -------*/
+		String genero = "";
+		
+		/* Sistema que solicita genero y altura para calcular peso ideal */
+		
+		do { //Iniciamos primer bloque del sistema donde solicita el genero.
+			genero = JOptionPane.showInputDialog("Introduce tu género (H/M)");
+			//Comparamos validez del genero suministrado ignorando mayúsculas y minúsculas.
+		}while(genero.equalsIgnoreCase("H") == false && genero.equalsIgnoreCase("M") == false);
+			//Cuando valide que el genero esta correcto, solicita la altura y la refundimos a entero.
+			int altura = Integer.parseInt(JOptionPane.showInputDialog("Introduce altura en cm"));
+			int pesoIdeal = 0;
+			if(genero.equalsIgnoreCase("H")) {
+				pesoIdeal=altura-110;
+			}else if(genero.equalsIgnoreCase("M")) {
+				pesoIdeal = altura-120;
+			}
+			System.out.println("Tu peso ideal es: " + pesoIdeal);
+		
+		/*------- Bucle do while y Método random() -------*/
 		
 		/* Utilizando el método random para que nos de un número aleatorio, 
            lo transformamos en entero. En while comparará en número introducido
-           a traves del JOptionPane con el número aleatorio y nos indicara si esta correcto.*/
+           a traves del JOptionPane con el número aleatorio y nos indicara si esta 
+           correcto.
+           El do while es para asegurarnos que el programa se ejecute al menos la 
+           primera vez en el caso que el número aleatorio sea cero, el el while normal 
+           nunca se ejecutaría.*/
 		
 		int aleatorio = (int)(Math.random()*100);
 		System.out.println(aleatorio);
@@ -42,7 +64,7 @@ public class Bucles {
 		int numero = 0;
 		int intentos = 0;
 		
-		while(numero != aleatorio) {
+		do {
 			intentos++;
 			System.out.println("Introduce un número por favor");
 			numero = entrada.nextInt();
@@ -52,8 +74,11 @@ public class Bucles {
 			}else if(aleatorio>numero){
 				System.out.println("Más alto");
 			}
-		}
+		}while(numero != aleatorio);
 		System.out.println("Correcto. Lo haz conseguido en " + intentos + " intentos.");
+		
+		
+		
 		/*===========================*/
 		/*=== Bucles determinados ===*/
 		/*===========================*/
