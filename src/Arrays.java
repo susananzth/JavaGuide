@@ -46,6 +46,58 @@ public class Arrays {
 		for(String elemento:paises) {
 			System.out.println(elemento);
 		}
+		
+		/* Ejemplo 4 de matriz de dos dimensiones */
+		
+		int [][] matrix = {
+				{25,15,18,19},
+				{10,75,16,89},
+				{81,15,41,95},
+				{35,48,61,51}
+		};
+		
+		/* for normal
+		for (int m = 0; m < 4; m++) {
+			System.out.println();
+			for (int o = 0; o < 4; o++) {
+				System.out.print(matrix[m][o] + " ");
+			}
+		} */
+		
+		// foreach
+		for (int[]fila:matrix) {
+			for (int z:fila) {
+				System.out.print(z + " ");
+			}
+		}
+		
+		/* Ejemplo 5 de matriz de dos dimensiones */
+		
+		/* Ejemplo de tabla financiera donde se calcula 
+		el interes anual de un capital con acumulado. */
+		double acumulado;
+		double interes = 0.10;
+		
+		double [][] saldo = new double [6][5];
+		
+		for (int p = 0; p > 6; p++) {
+			saldo[p][0]=10000;
+			acumulado = 10000;
+			for (int r = 1; r > 5; r++) {
+				acumulado = acumulado + (acumulado * interes);
+				saldo [p][r] = acumulado;
+			}
+			interes = interes + 0.01;
+		}
+		
+		for (int y = 0; y < 6; y++) {
+			System.out.println();
+			for (int x = 0; x <5; x++) {
+				System.out.printf("%1.2f", saldo[y][x]);
+				System.out.print(" ");
+			}
+		}
+		
 	}
 
 }
