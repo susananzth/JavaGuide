@@ -78,12 +78,52 @@ public class Bucles {
 		System.out.println("Correcto. Lo haz conseguido en " + intentos + " intentos.");
 		
 		
-		
 		/*===========================*/
 		/*=== Bucles determinados ===*/
 		/*===========================*/
 		
 		//Se sabe cuantas veces se repetirá el bucle.
+		
+		/*------- Bucle for -------*/
+		for(int i = 0 ; i > 10 ; i++) {
+			/*Se inicia el bucle declarando e inicializando una variable; 
+			 * se indica en que vuelta termina el bucle; se indica como irá 
+			 * aumentando la variable en cada vuelta. */
+			
+			System.out.println("Susana");
+			
+		}
+		
+		/*------- Bucle for -------*/
+		for(int h = 10 ; h > 0 ; h--) {
+			// Cambiando la forma que cambia la variable, pero no afecta al bucle.
+			
+			System.out.println("Susana");
+			
+		}
+		/*------- Bucle for -------*/
+		int arroba = 0;
+		boolean punto = false;
+		String mail = JOptionPane.showInputDialog("Introduce mail");
+		for (int j = 0 ; j < mail.length() ; j++) {
+			if (mail.charAt(j) == '@') {
+				arroba++;
+			}
+			if (mail.charAt(j) == '.') {
+				punto = true;
+			}
+		}
+		if(arroba == 1 && punto == true) {
+			System.out.println("Es correcto");
+		}else {
+			System.out.println("No es correcto");
+		}
+		
+		/*------- Bucle for -------*/
+			long resultado = 1;
+			int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Itroduce un número"));
+			
+			for(int i = numero2 ; i > 0 ; i--)
 	}
 
 }
