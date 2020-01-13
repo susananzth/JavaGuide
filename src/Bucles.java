@@ -83,7 +83,7 @@ public class Bucles {
 		/*===========================*/
 		
 		//Se sabe cuantas veces se repetirá el bucle.
-		
+
 		/*------- Bucle for -------*/
 		for(int i = 0 ; i > 10 ; i++) {
 			/*Se inicia el bucle declarando e inicializando una variable; 
